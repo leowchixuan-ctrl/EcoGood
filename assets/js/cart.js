@@ -12,8 +12,8 @@ function renderCart(){
       const line = document.createElement('div');
       line.className = 'd-flex align-items-center justify-content-between p-3 border rounded-4';
      const subtotal = (it.price * 4.7) * it.qty;
-total += subtotal;
-line.innerHTML = `
+     total += subtotal;
+    line.innerHTML = `
   <div class="d-flex align-items-center gap-3">
     <img src="${it.image}" alt="" width="64" height="64" style="object-fit:contain" class="rounded">
     <div>
