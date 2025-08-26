@@ -17,8 +17,22 @@ function renderProducts(list){
             </div>
           </div>
         </div>
-      </div>
-      }
+      </div>`);
+    grid.append(col);
+  });
+
+  // Force GSAP to detect new elements
+  if (window.ScrollTrigger) {
+    ScrollTrigger.refresh();
+  }
+
+  // Fallback: show products even if GSAP fails
+  setTimeout(()=>{
+    document.querySelectorAll('#productsGrid .fade-in').forEach(el=>{
+      el.classList.add('visible');
+    });
+  }, 300);
+}
 
 function applyFilters(products){
   const q = $('#searchInput').val().toLowerCase();
@@ -35,7 +49,6 @@ $(async function(){
     sel.append(`<option value="all">All categories</option>`);
     categories.forEach(c => sel.append(`<option value="${c}">${c}</option>`));
     renderProducts(products);
-    ScrollTrigger.refresh();
     $('#searchInput, #categoryFilter').on('input change', ()=>applyFilters(products));
     $('#productsGrid').on('click', '[data-add]', function(){
       const p = JSON.parse($(this).attr('data-add'));
@@ -71,6 +84,19 @@ $(async function(){
       </div>`);
       container.append(col);
     });
+
+    // Force GSAP to detect new arrivals
+    if (window.ScrollTrigger) {
+      ScrollTrigger.refresh();
+    }
+
+    // Fallback: show arrivals even if GSAP fails
+    setTimeout(()=>{
+      document.querySelectorAll('#newArrivals .fade-in').forEach(el=>{
+        el.classList.add('visible');
+      });
+    }, 300);
+
     container.on('click', '[data-add]', function(){
       const p = JSON.parse($(this).attr('data-add'));
       p.price = p.price * 4.7;
