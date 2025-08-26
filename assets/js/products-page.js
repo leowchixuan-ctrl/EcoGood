@@ -1,3 +1,4 @@
+console.log("✅ products-page.js is loaded!");
 function renderProducts(list){
   const grid = $('#productsGrid');
   grid.empty();
