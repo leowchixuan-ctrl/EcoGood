@@ -59,7 +59,7 @@
     "id": 8,
     "title": "Organic Cotton Tote Bag",
     "price": 5.00,
-    "description": "Rechargeable lantern powered by solar energy.",
+    "description": "Strong and stylish tote bag made from 100% organic cotton. Perfect for grocery shopping and everyday use.",
     "category": "Household",
     "image": "https://images.unsplash.com/photo-1621466550398-ac8062907657"
   },
@@ -160,4 +160,5 @@
     "image": "https://images.unsplash.com/photo-1624372635310-01d078c05dd9"
   }
 ]
+
 
