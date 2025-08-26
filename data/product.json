@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Reusable Bamboo Coffee Cup",
+    "price": 12.99,
+    "description": "Eco-friendly bamboo fiber coffee cup with silicone lid and sleeve. Durable, reusable, and biodegradable.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1526401485004-2aa7c3a5dc9b"
+  },
+  {
+    "id": 2,
+    "title": "Beeswax Food Wraps (Set of 3)",
+    "price": 14.99,
+    "description": "Reusable beeswax wraps to replace plastic wrap. Washable, breathable, and compostable.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1608219959301-2296f64d4f64"
+  },
+  {
+    "id": 3,
+    "title": "Coconut Bowl Set",
+    "price": 19.99,
+    "description": "Handmade bowls crafted from reclaimed coconut shells. Perfect for smoothies and salads.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1601050690592-5f57a99e6a39"
+  },
+  {
+    "id": 4,
+    "title": "Eco Laundry Detergent Sheets",
+    "price": 15.99,
+    "description": "Plastic-free laundry detergent sheets. Lightweight, effective, and biodegradable.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1626274712853-1c3f6b9b6a02"
+  },
+  {
+    "id": 5,
+    "title": "Biodegradable Trash Bags",
+    "price": 13.99,
+    "description": "Compostable trash bags made from plant-based materials. Strong and leak-proof.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1618320303850-79b6c4d1f7c5"
+  },
+  {
+    "id": 6,
+    "title": "Bamboo Toothbrush (Pack of 4)",
+    "price": 10.99,
+    "description": "Biodegradable bamboo toothbrushes with BPA-free bristles. Eco-friendly alternative to plastic.",
+    "category": "Personal Care",
+    "image": "https://images.unsplash.com/photo-1598908311873-4c4933c1bb5f"
+  },
+  {
+    "id": 7,
+    "title": "Natural Loofah Sponge",
+    "price": 6.90,
+    "description": "Zero-waste exfoliating bath sponge made from dried loofah plants.",
+    "category": "Personal Care",
+    "image": "https://images.unsplash.com/photo-1619733075375-7f89d6f8f1f0"
+  },
+  {
+    "id": 8,
+    "title": "Compostable Phone Case",
+    "price": 24.95,
+    "description": "Plant-based biodegradable phone case. Slim, durable, and eco-friendly.",
+    "category": "Personal Care",
+    "image": "https://images.unsplash.com/photo-1626179068574-b3179e89c9b4"
+  },
+  {
+    "id": 9,
+    "title": "Organic Cotton Tote Bag",
+    "price": 9.50,
+    "description": "Strong and stylish tote bag made from 100% organic cotton. Perfect for grocery shopping and everyday use.",
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1610623785722-09a3c7d7a7d4"
+  },
+  {
+    "id": 10,
+    "title": "Organic Cotton T-Shirt",
+    "price": 22.00,
+    "description": "Soft, breathable T-shirt made from certified organic cotton. Sustainable fashion choice.",
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1520975918318-6c1d3b1d7a21"
+  },
+  {
+    "id": 11,
+    "title": "Bamboo Sunglasses",
+    "price": 35.00,
+    "description": "Stylish sunglasses with bamboo frames and polarized lenses. Lightweight and eco-conscious.",
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1517863479620-7b51d2d3f3f8"
+  },
+  {
+    "id": 12,
+    "title": "Hemp Backpack",
+    "price": 59.00,
+    "description": "Durable backpack made from natural hemp fiber. Sustainable and stylish.",
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1535905748047-14b0f65e95d7"
+  },
+  {
+    "id": 13,
+    "title": "Stainless Steel Water Bottle",
+    "price": 18.00,
+    "description": "Reusable insulated water bottle, keeps drinks cold for 24h and hot for 12h. Zero plastic waste.",
+    "category": "Outdoor & Travel",
+    "image": "https://images.unsplash.com/photo-1594737625785-c3c5a4f7e7b3"
+  },
+  {
+    "id": 14,
+    "title": "Solar Powered Lantern",
+    "price": 29.90,
+    "description": "Portable lantern powered by solar energy. Ideal for camping or home emergency use.",
+    "category": "Outdoor & Travel",
+    "image": "https://images.unsplash.com/photo-1590420488880-5eeb8b8e7c2b"
+  },
+  {
+    "id": 15,
+    "title": "Reusable Produce Bags (Set of 5)",
+    "price": 11.50,
+    "description": "Mesh cotton produce bags to replace single-use plastic bags. Washable and durable.",
+    "category": "Outdoor & Travel",
+    "image": "https://images.unsplash.com/photo-1588776814546-5b6e1ef2d7a5"
+  },
+  {
+    "id": 16,
+    "title": "Eco-Friendly Yoga Mat",
+    "price": 49.00,
+    "description": "Non-toxic, biodegradable yoga mat made from natural tree rubber.",
+    "category": "Outdoor & Travel",
+    "image": "https://images.unsplash.com/photo-1617957741643-5f78eaef3a1d"
+  },
+  {
+    "id": 17,
+    "title": "Solar Power Bank",
+    "price": 39.99,
+    "description": "Portable charger powered by solar energy. Dual USB ports for charging devices.",
+    "category": "Outdoor & Travel",
+    "image": "https://images.unsplash.com/photo-1551627834-5b9aeb1fdb0a"
+  },
+  {
+    "id": 18,
+    "title": "Recycled Notebook",
+    "price": 7.20,
+    "description": "Notebook made from 100% recycled paper with eco-friendly ink printing.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d"
+  },
+  {
+    "id": 19,
+    "title": "Eco Wooden Cutlery Set",
+    "price": 8.99,
+    "description": "Reusable cutlery set made from sustainably sourced wood. Comes with cotton pouch.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1611054119952-017a9d88b45d"
+  },
+  {
+    "id": 20,
+    "title": "Recycled Glass Water Pitcher",
+    "price": 27.50,
+    "description": "Handmade pitcher crafted from recycled glass. Elegant and eco-conscious tableware.",
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1600334129128-7a46f38e660f"
+  }
+]
