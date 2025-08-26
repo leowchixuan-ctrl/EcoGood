@@ -4,7 +4,6 @@ $(async function(){
   if(!id){ container.html('<div class="alert alert-warning">No product specified.</div>'); return; }
   try{
     const p = await fetchProduct(id);
-    const priceMY = p.price * 4.7;
     container.html(`
       <div class="col-md-6 text-center">
         <img src="${p.image}" class="img-fluid rounded-4 p-4" style="max-height:420px;object-fit:contain" alt="">
