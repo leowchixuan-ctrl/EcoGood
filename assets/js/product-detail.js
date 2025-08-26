@@ -20,7 +20,7 @@ $(async function(){
         <div class="small text-muted">Category: ${p.category}</div>
       </div>`);
     $('#addBtn').on('click', ()=>{
-      addToCart({id:p.id, title:p.title, price:priceMY, image:p.image, qty:Number($('#qty').val())||1});
+      addToCart({id:p.id, title:p.title, price:p.price, image:p.image, qty:Number($('#qty').val())||1});
     });
   }catch(e){
     container.html('<div class="alert alert-danger">Failed to load product.</div>');
