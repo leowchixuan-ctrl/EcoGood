@@ -1,3 +1,4 @@
+// animations.js
 
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,11 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Product cards stagger
+  // Product cards stagger fade-in
   if (document.querySelector("#productsGrid")) {
     ScrollTrigger.batch("#productsGrid .fade-in", {
-      onEnter: batch => gsap.to(batch, {opacity:1, y:0, stagger:0.15, overwrite:true, duration:0.8, ease:"power2.out"}),
-      start: "top 90%"
+      start: "top 90%",
+      onEnter: batch => gsap.to(batch, {
+        opacity: 1,
+        y: 0,
+        stagger: 0.15,
+        overwrite: true,
+        duration: 0.8,
+        ease: "power2.out"
+      }),
+      once: true // only animate once
     });
   }
 
