@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Detail · EcoGoods</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@0.2.34/dist/lenis.min.js"></script>
+  <script defer src="assets/js/utils.js"></script>
+  <script defer src="assets/js/storage.js"></script>
+  <script defer src="assets/js/cart.js"></script>
+  <script defer src="assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="assets/js/animations.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EcoGoods</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span id="welcomeUser" class="text-muted small"></span>
+        <a class="btn btn-outline-dark position-relative" href="cart.html">
+          Cart
+          <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+        </a>
+        <a class="btn btn-success" href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4" id="productDetail">
+  <div id="detailContainer" class="row g-4 fade-in">
+    <!-- Filled dynamically -->
+  </div>
+</main>
+<script defer src="assets/js/api.js"></script>
+<script defer src="assets/js/product-detail.js"></script>
+<footer class="mt-5 pt-5 border-top">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="fw-bold">EcoGoods</h5>
+        <p class="text-muted">Sustainable essentials for everyday life.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-semibold">Follow updates</h6>
+        <a class="twitter-timeline" data-height="280" href="https://twitter.com/UNEP">Tweets by UNEP</a>
+      </div>
+      <div class="col-md-4">
+        <h6 class="fw-semibold">Newsletter</h6>
+        <form id="newsletterForm" class="row gy-2">
+          <div class="col-12">
+            <input type="email" class="form-control" id="newsletterEmail" placeholder="you@example.com" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+          </div>
+          <div class="col-12">
+            <div id="newsletterMsg" class="small text-success"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="text-center small text-muted py-4">© <span id="year"></span> EcoGoods. Built for coursework.</div>
+  </div>
+</footer>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
