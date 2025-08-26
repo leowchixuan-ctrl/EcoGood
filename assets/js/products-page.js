@@ -33,7 +33,6 @@ function applyFilters(products){
 $(async function(){
   try{
     const [products, categories] = await Promise.all([fetchAllProducts(), fetchCategories()]);
-    products.forEach(p => p.price = p.price * 4.7);
     const sel = $('#categoryFilter');
     sel.append(`<option value="all">All categories</option>`);
     categories.forEach(c => sel.append(`<option value="${c}">${c}</option>`));
