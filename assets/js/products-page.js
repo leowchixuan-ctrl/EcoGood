@@ -54,9 +54,10 @@ $(async function(){
 
     // ✅ Store original API price when adding to cart
     $('#productsGrid').on('click', '[data-add]', function(){
-      const p = JSON.parse($(this).attr('data-add'));
-      addToCart({id:p.id, title:p.title, price:p.price, image:p.image, qty:1});
-    });
+  const p = JSON.parse($(this).attr('data-add'));
+  const priceMY = (p.price * 4.7).toFixed(2);
+  addToCart({id:p.id, title:p.title, price:Number(priceMY), image:p.image, qty:1});
+});
   }catch(e){
     $('#productsGrid').html('<div class="alert alert-danger">Failed to load products from API.</div>');
     console.error(e);
@@ -102,9 +103,10 @@ $(async function(){
 
     // ✅ Store original API price when adding to cart
     container.on('click', '[data-add]', function(){
-      const p = JSON.parse($(this).attr('data-add'));
-      addToCart({id:p.id, title:p.title, price:p.price, image:p.image, qty:1});
-    });
+  const p = JSON.parse($(this).attr('data-add'));
+  const priceMY = (p.price * 4.7).toFixed(2);
+  addToCart({id:p.id, title:p.title, price:Number(priceMY), image:p.image, qty:1});
+});
   }catch(e){
     container.html('<div class="alert alert-danger">Failed to load new arrivals.</div>');
   }
