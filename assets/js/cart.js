@@ -11,7 +11,7 @@ function renderCart(){
     items.forEach(it => {
       const line = document.createElement('div');
       line.className = 'd-flex align-items-center justify-content-between p-3 border rounded-4';
-     const subtotal = (it.price * 4.7) * it.qty;
+     const subtotal = (it.price ) * it.qty;
      total += subtotal;
     line.innerHTML = `
   <div class="d-flex align-items-center gap-3">
