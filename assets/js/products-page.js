@@ -17,10 +17,8 @@ function renderProducts(list){
             </div>
           </div>
         </div>
-      </div>`);
-    grid.append(col);
-  });
-}
+      </div>
+      }
 
 function applyFilters(products){
   const q = $('#searchInput').val().toLowerCase();
