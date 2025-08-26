@@ -37,6 +37,7 @@ $(async function(){
     sel.append(`<option value="all">All categories</option>`);
     categories.forEach(c => sel.append(`<option value="${c}">${c}</option>`));
     renderProducts(products);
+    ScrollTrigger.refresh();
     $('#searchInput, #categoryFilter').on('input change', ()=>applyFilters(products));
     $('#productsGrid').on('click', '[data-add]', function(){
       const p = JSON.parse($(this).attr('data-add'));
