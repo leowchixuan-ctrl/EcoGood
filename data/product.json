@@ -13,7 +13,7 @@
     "price": 5.00,
     "description": "Durable and washable cotton tote bag, perfect for shopping.",
     "category": "Lifestyle",
-    "image": "https://plus.unsplash.com/premium_photo-1681498942780-18f9071ca2c7"
+    "image": "https://images.unsplash.com/photo-1542957057-debadce4ce81"
   },
   {
     "id": 3,
@@ -160,6 +160,7 @@
     "image": "https://images.unsplash.com/photo-1624372635310-01d078c05dd9"
   }
 ]
+
 
 
 
