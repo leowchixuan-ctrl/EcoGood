@@ -9,7 +9,7 @@ function renderProducts(list){
           <div class="card-body d-flex flex-column">
             <h6 class="card-title">${p.title}</h6>
             <div class="mt-auto d-flex justify-content-between align-items-center">
-              <span class="price">RM${(p.price*4.7).toFixed(2)}</span>
+              <span class="price">RM${(p.price * 4.7).toFixed(2)}</span>
               <div class="btn-group">
                 <a href="product-detail.html?id=${p.id}" class="btn btn-sm btn-outline-dark">View</a>
                 <button class="btn btn-sm btn-dark" data-add='${JSON.stringify(p).replace(/'/g,"&#39;")}'>Add</button>
@@ -49,7 +49,10 @@ $(async function(){
     sel.append(`<option value="all">All categories</option>`);
     categories.forEach(c => sel.append(`<option value="${c}">${c}</option>`));
     renderProducts(products);
+
     $('#searchInput, #categoryFilter').on('input change', ()=>applyFilters(products));
+
+    // ✅ Store original API price when adding to cart
     $('#productsGrid').on('click', '[data-add]', function(){
       const p = JSON.parse($(this).attr('data-add'));
       addToCart({id:p.id, title:p.title, price:p.price, image:p.image, qty:1});
@@ -73,7 +76,7 @@ $(async function(){
           <div class="card-body d-flex flex-column">
             <h6 class="card-title">${p.title}</h6>
             <div class="mt-auto d-flex justify-content-between align-items-center">
-              <span class="price">RM${(p.price*4.7).toFixed(2)}</span>
+              <span class="price">RM${(p.price * 4.7).toFixed(2)}</span>
               <div class="btn-group">
                 <a href="product-detail.html?id=${p.id}" class="btn btn-sm btn-outline-dark">View</a>
                 <button class="btn btn-sm btn-dark" data-add='${JSON.stringify(p).replace(/'/g,"&#39;")}'>Add</button>
@@ -97,9 +100,9 @@ $(async function(){
       });
     }, 300);
 
+    // ✅ Store original API price when adding to cart
     container.on('click', '[data-add]', function(){
       const p = JSON.parse($(this).attr('data-add'));
-      p.price = p.price * 4.7;
       addToCart({id:p.id, title:p.title, price:p.price, image:p.image, qty:1});
     });
   }catch(e){
