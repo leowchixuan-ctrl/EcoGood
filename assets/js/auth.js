@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function logoutUser() {
-    sessionStorage.removeItem('eg_user');
-    setCookie('eg_username', '', -1); // delete cookie
-    showLoginBtn();
-  }
+  sessionStorage.removeItem('eg_user');
+  setCookie('eg_username', '', -1); // delete cookie
+  window.location.href = "index.html"; // redirect home
+}
 
   // --- Check existing login state ---
   let activeUser = sessionStorage.getItem('eg_user');
