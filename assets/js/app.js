@@ -10,7 +10,7 @@
     const form = document.getElementById('newsletterForm');
     form?.addEventListener('submit', (e)=>{
       e.preventDefault();
-      document.getElementById('newsletterMsg').textContent = 'Subscribed! (demo)';
+      document.getElementById('newsletterMsg').textContent = 'Subscribed!';
       form.reset();
     });
 
