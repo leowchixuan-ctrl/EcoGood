@@ -47,7 +47,7 @@ function renderCart(){
   checkoutBtn?.addEventListener('click', ()=>{
     saveCart([]);
     renderCart();
-    document.getElementById('checkoutMsg').textContent = 'Thank you! Your (simulated) order has been placed.';
+    document.getElementById('checkoutMsg').textContent = 'Thank you! Your order has been placed.';
   });
 }
 document.addEventListener('DOMContentLoaded', renderCart);
