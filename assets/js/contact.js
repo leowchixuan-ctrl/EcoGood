@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       form.classList.add('was-validated');
       return;
     }
-    status.textContent = 'Thanks! We will reply soon. (demo)';
+    status.textContent = 'Thanks! We will reply soon.';
     sessionStorage.removeItem('eg_contact_draft');
     form.reset();
     form.classList.remove('was-validated');
